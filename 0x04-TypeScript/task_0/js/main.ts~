@@ -1,0 +1,20 @@
+interface Student {
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
+}
+
+const grace: Student = {
+   firstName: 'Grace';
+   lastName: 'Ashley';
+   age: 30;
+   location: 'kaneshie'
+}
+
+const Elizabeth: Student = {
+   firstName: 'Elizabeth';
+   lastName: 'Conte';
+   age: 30;
+   location: 'kaneshie'
+}
