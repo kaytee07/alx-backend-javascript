@@ -1,3 +1,8 @@
+/**
+*student controller
+*
+*/
+
 import readDatabase from '../utils';
 
 /**
