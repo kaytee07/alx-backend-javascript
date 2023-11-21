@@ -1,13 +1,12 @@
-import fs from 'fs';
-
 /**
  * Reads the data of students in a CSV data file.
  * @param {String} dataPath The path to the CSV data file.
- * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @author Winful Kofi Taylor <https://github.com/Kaytee07>
  * @returns {Promise<{
  *   String: {firstname: String, lastname: String, age: number}[]
  * }>}
  */
+import fs from 'fs';
 const readDatabase = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
     reject(new Error('Cannot load the database'));
