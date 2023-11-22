@@ -1,6 +1,3 @@
-/**
- * The list of supported majors.
- */
 import readDatabase from '../utils';
 
 class StudentsController {
@@ -48,3 +45,5 @@ class StudentsController {
     }
   }
 }
+
+export default StudentsController;
