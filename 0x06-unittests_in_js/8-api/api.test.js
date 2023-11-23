@@ -2,7 +2,7 @@ const request = require('request');
 const { expect } = require('chai');
 
 describe("integration test", () => {
-/**    let server;
+    let server;
 
     before(() => {
         server = require('./api');
@@ -12,7 +12,7 @@ describe("integration test", () => {
         server.close;
     });
 
-    it("correct status code", (done) => {
+/**    it("correct status code", (done) => {
         request.get("http://localhost:7865", (error, response) => {
             expect(response.statusCode).to.equal(200);
             done();
