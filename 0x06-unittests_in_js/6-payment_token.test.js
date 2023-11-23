@@ -3,7 +3,7 @@ const { expected } = require('chai')
 
 
 describe("resolve with correct data", () => {
-    it('resolve with correct data', async () => {
+    it('resolve with correct data', () => {
 	getPaymentTokenFromAPI(true).then((result) => {
 	    expect(result).to.equal({data: 'Successful response from the API'});
 	    done();
