@@ -12,6 +12,34 @@ describe("integration test", () => {
 	server.close;
     });
 
+     it("correct status code", (done) => {
+        request.get("http://localhost:7865", (error, response) => {
+            expect(response.statusCode).to.equal(200);
+            done();
+        })
+    })
+
+    it("response with correct message", (done) => {
+        request.get("http://localhost:7865", (error, response, body) => {
+            expect(body).to.equal('Welcome to the payment system');
+            done();
+        })
+    })
+
+    it("correct status code when id is a number", (done) => {
+        request.get("http://localhost:7865/cart/9", (error, response) => {
+            expect(response.statusCode).to.equal(200);
+            done();
+        });
+    })
+
+    it("correct status code when id is not a number", (done) => {
+        request.get("http://localhost:7865/card/hello", (error, response, body) => {
+            expect(response.statusCode).to.equal(404);
+            done();
+        })
+    })
+
     it("test user login", (done) => {
 	user = {userName: 'Winful'}
 	request.post({
