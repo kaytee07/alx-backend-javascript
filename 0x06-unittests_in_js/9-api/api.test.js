@@ -16,7 +16,7 @@ describe("integration test", () => {
 	request.get("http://localhost:7865/cart/9", (error, response) => {
 	    expect(response.statusCode).to.equal(200);
 	    done();
-	})
+	});
     })
 
     it("correct status code when id is not a number", (done) => {
